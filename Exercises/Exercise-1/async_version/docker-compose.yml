@@ -1,12 +1,8 @@
 version: "3.9"
 services:
-  test:
-    image: "exercise-1"
-    volumes:
-      - .:/app
-    command: python3 -m pytest
   run:
-    image: "exercise-1"
+    #e1 is the image name i tagged the image with when building the container 
+    image: "e1"
     volumes:
       - .:/app
-    command: python3 main.py
+    command: python3 async_main.py
